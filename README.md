@@ -29,6 +29,8 @@ cd <repository-directory>
 
 Go into the main.py file and run the program.
 
+After starting the program, you can use the commands listed. Pre-filled data is added with the library.json
+
 ---
 
 ### Main Classes
