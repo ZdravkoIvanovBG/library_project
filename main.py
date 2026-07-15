@@ -31,12 +31,14 @@ while True:
                 file_size = int(input("File size: "))
 
                 lib.add_e_book(file_format, file_size, book_id, title, author, release_year)
-            else:
+            elif type_of_book.lower() == "book":
                 title, author, release_year = add_book_information()
                 isbn = input("ISBN: ")
                 pages = int(input("Pages: "))
 
                 lib.add_book(isbn, pages, book_id, title, author, release_year)
+            else:
+                raise Exception("Invalid book type.")
 
             print("Successfully added book.")
 
