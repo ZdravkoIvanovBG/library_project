@@ -115,7 +115,7 @@ class Library:
             raise Exception("No readers in the library.")
 
         for reader in self.readers:
-            print(f"{reader.name} - {reader.reader_id}")
+            print(f"Name: {reader.name} - {', '.join(book.title for book in reader.books) or "No"} books")
 
     def save_data(self):
         data = {
