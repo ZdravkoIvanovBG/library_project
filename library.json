@@ -1,0 +1,153 @@
+{
+    "books": [
+        {
+            "book_type": "Book",
+            "book_id": 3,
+            "title": "The Great Gatsby",
+            "author": "F. Scott Fitzgerald",
+            "release_year": 1925,
+            "isbn": "9780743273565",
+            "pages": 180,
+            "availability": true
+        },
+        {
+            "book_type": "Book",
+            "book_id": 1,
+            "title": "The Hobbit",
+            "author": "J.R.R. Tolkien",
+            "release_year": 1937,
+            "isbn": "9780547928227",
+            "pages": 310,
+            "availability": false
+        },
+        {
+            "book_type": "Book",
+            "book_id": 11,
+            "title": "Grapes Wrath",
+            "author": "John Steinbeck",
+            "release_year": 1939,
+            "isbn": "1234567890123",
+            "pages": 120,
+            "availability": true
+        },
+        {
+            "book_type": "Book",
+            "book_id": 2,
+            "title": "1984",
+            "author": "George Orwell",
+            "release_year": 1949,
+            "isbn": "9780451524935",
+            "pages": 328,
+            "availability": false
+        },
+        {
+            "book_type": "Book",
+            "book_id": 4,
+            "title": "Dune",
+            "author": "Frank Herbert",
+            "release_year": 1965,
+            "isbn": "9780441172719",
+            "pages": 688,
+            "availability": true
+        },
+        {
+            "book_type": "Book",
+            "book_id": 5,
+            "title": "The Alchemist",
+            "author": "Paulo Coelho",
+            "release_year": 1988,
+            "isbn": "9780061122415",
+            "pages": 208,
+            "availability": true
+        },
+        {
+            "book_type": "Book",
+            "book_id": 12,
+            "title": "Harry Potter",
+            "author": "J. K. Rowling",
+            "release_year": 1997,
+            "isbn": "9781234567897",
+            "pages": 500,
+            "availability": false
+        },
+        {
+            "book_type": "EBook",
+            "book_id": 8,
+            "title": "The Pragmatic Programmer",
+            "author": "Andrew Hunt and David Thomas",
+            "release_year": 1999,
+            "file_format": "PDF",
+            "file_size": "3.2MB",
+            "availability": true
+        },
+        {
+            "book_type": "EBook",
+            "book_id": 7,
+            "title": "Clean Code",
+            "author": "Robert C. Martin",
+            "release_year": 2008,
+            "file_format": "PDF",
+            "file_size": "2.8MB",
+            "availability": true
+        },
+        {
+            "book_type": "EBook",
+            "book_id": 10,
+            "title": "Python Crash Course",
+            "author": "Eric Matthes",
+            "release_year": 2015,
+            "file_format": "PDF",
+            "file_size": "6.7MB",
+            "availability": true
+        },
+        {
+            "book_type": "EBook",
+            "book_id": 9,
+            "title": "Deep Work",
+            "author": "Cal Newport",
+            "release_year": 2016,
+            "file_format": "PDF",
+            "file_size": "5.1MB",
+            "availability": true
+        },
+        {
+            "book_type": "EBook",
+            "book_id": 6,
+            "title": "Atomic Habits",
+            "author": "James Clear",
+            "release_year": 2018,
+            "file_format": "PDF",
+            "file_size": "4.5MB",
+            "availability": true
+        }
+    ],
+    "readers": [
+        {
+            "reader_id": 1,
+            "name": "John Smith",
+            "borrowed_books": [
+                "Clean Code",
+                "Atomic Habits"
+            ]
+        },
+        {
+            "reader_id": 2,
+            "name": "Emily Johnson",
+            "borrowed_books": []
+        },
+        {
+            "reader_id": 3,
+            "name": "Daniel Brown",
+            "borrowed_books": []
+        },
+        {
+            "reader_id": 4,
+            "name": "Zdravko",
+            "borrowed_books": [
+                "1984",
+                "Harry Potter",
+                "The Hobbit"
+            ]
+        }
+    ]
+}
