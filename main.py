@@ -25,15 +25,14 @@ while True:
             type_of_book = input("Type of book: ")
             book_id = lib.generate_book_id()
 
-            if type_of_book.lower() == "e-book":
-                title, author, release_year = add_book_information()
+            title, author, release_year = add_book_information()
 
+            if type_of_book.lower() == "e-book":
                 file_format = input("File format: ")
                 file_size = int(input("File size: "))
 
                 lib.add_e_book(file_format, file_size, book_id, title, author, release_year)
             elif type_of_book.lower() == "book":
-                title, author, release_year = add_book_information()
                 isbn = input("ISBN: ")
                 pages = int(input("Pages: "))
 
