@@ -21,6 +21,7 @@ while True:
 
     try:
         if command.lower() == "add book":
+            print("Book Types: E-Book, Book")
             type_of_book = input("Type of book: ")
             book_id = lib.generate_book_id()
 
