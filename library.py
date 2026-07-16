@@ -56,6 +56,8 @@ class Library:
         e_book = EBook(file_format, file_size, book_id, title, author, release_year)
         self.books.append(e_book)
 
+        return f"Book {title} with File Format {file_format}/File Size: {file_size} added to the library as an e-book."
+
     def add_reader(self, reader_id, name):
         for reader in self.readers:
             if reader.reader_id == reader_id:
