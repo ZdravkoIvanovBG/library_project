@@ -12,9 +12,18 @@ class Library:
 
     # Linear Time Complexity - O(n)
     def search_book(self, title):
+        no_available_book = None
+
         for book in self.books:
             if book.title.lower() == title.lower():
-                return book
+                if book.is_available():
+                    return book # Return the first available book
+
+                if no_available_book is None:
+                    no_available_book = book # remember the first book of all unavailable ones
+
+        if no_available_book:
+            return no_available_book # if no available book exists, return the first unavailable book
 
         raise Exception("Book not found.")
 
