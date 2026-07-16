@@ -11,7 +11,7 @@ lib = Library()
 lib.load_data()
 
 while True:
-    print("Available commands: add book, add reader, borrow book, return book, remove book, show books, show readers, sort books, finish")
+    print("Available commands: add book, add reader, borrow book, return book, remove book, show books, show readers, sort books, search book, finish")
     command = input("Command: ")
 
     if command.lower() == "finish":
@@ -80,5 +80,15 @@ while True:
 
             print(f"Books sorted by {sort_by.capitalize()}.")
 
+        elif command.lower() == "search book":
+            book_title = input("Book title: ")
+
+            book = lib.search_book(book_title)
+
+            for key, value in book.object_to_dict().items():
+                print(f"{key}: {value}")
+
+        else:
+            print("Invalid Command. Try again.")
     except Exception as e:
         print(e)
